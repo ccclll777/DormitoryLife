@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFFF"
+    tools:context=".ChatActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/tab_top">
+        <include layout="@layout/include_chat" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_top"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#F9F9F9"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:id="@+id/chat_lay"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="#FFE4E1"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            >
+
+            <EditText
+
+                android:hint="说点什么吧~~"
+
+                android:textSize="14sp"
+                android:id="@+id/edit_context"
+                style="?android:attr/textViewStyle"
+
+                android:paddingLeft="20dp"
+                android:maxLines="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/base_edit_input"
+                android:imeOptions="flagNoExtractUi"
+                android:minHeight="@dimen/tab_padding_left_right"
+                android:padding="5dp"
+
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:layout_weight="1.5"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/txt_send"
+            android:background="@drawable/kuang"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

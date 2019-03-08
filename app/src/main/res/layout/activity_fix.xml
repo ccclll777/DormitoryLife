@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FixActivity"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/include_fix_bar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:text="请向工作人员描述你的问题"
+        android:textColor="#00BFFF"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edit_user_fix"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_edit_height"
+        android:paddingLeft="10dp"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:hint="宿舍"
+        android:background="@drawable/input"
+        />
+
+    <EditText
+        android:id="@+id/edit_describe_fix"
+        android:hint="问题"
+        android:background="@drawable/input"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minLines="4"
+        />
+    <Button
+        android:id="@+id/btn_add_fix"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/navitext"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_line_while"
+        android:gravity="center"
+        android:text="问题提交"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="您可以选择向公寓管理中心拨打电话！"
+        android:textColor="#00BFFF"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/call_fix"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/navitext"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_line_while"
+        android:gravity="center"
+        android:text="拨打电话"/>
+</LinearLayout>

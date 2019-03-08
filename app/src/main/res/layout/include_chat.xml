@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_action_bar_height"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_chat_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_back_selector" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        style="@style/Smile.TextView._White"
+        android:layout_centerInParent="true"
+        android:text="木头哥哥"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/btn_Chatrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+       android:text="聊天记录"
+        android:clickable="true"
+        android:textSize="18sp"
+        style="@style/Smile.TextView._White"
+        android:background="#00BFFF" />
+</RelativeLayout>

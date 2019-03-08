@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapinfowindow"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mapInfo_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login_icon" />
+
+        <TextView
+            android:id="@+id/mapInfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mapInfo_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="名字"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/mapInfo_wash"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_alignLeft="@id/mapInfo_image"
+            android:layout_below="@id/mapInfo_image"
+            android:background="@drawable/default_style"
+            android:text="洗衣服"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/mapInfo_getIn"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:background="@drawable/default_style"
+            android:layout_below="@id/mapInfo_image"
+            android:layout_toRightOf="@+id/mapInfo_wash"
+            android:text="收衣服"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/mapInfo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:background="@drawable/default_style"
+            android:layout_below="@id/mapInfo_image"
+            android:layout_toRightOf="@+id/mapInfo_getIn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="回宿舍"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/mapInfo_distance1"
+            android:layout_below="@id/mapInfo_wash"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离:"
+            android:textColor="#ff000000"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/mapInfo_distance2"
+            android:layout_below="@id/mapInfo_wash"
+            android:layout_toRightOf="@id/mapInfo_distance1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mapinfowindowtriangle"
+        android:layout_gravity="center"/>
+</LinearLayout>

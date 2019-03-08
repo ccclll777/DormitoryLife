@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personal_InformationActivity"
+    android:background="#FFFFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/include_mine_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFF8833" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="姓名"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="屁屁"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="学校"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_university"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="山东大学"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="校区"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="软件园"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="学院"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="软件学院"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="专业"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="软件工程"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="班级"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="8班"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="学号"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_stuID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="201700000001"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="宿舍楼"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_dormBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1号楼"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star_yes"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="寝室号"
+                android:textColor="#474747"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_myInfo_dormRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="666"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

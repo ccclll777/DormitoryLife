@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#00BFFF"
+    android:padding="3dp">
+    <TextView
+        android:id="@+id/map_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:text="更新当前位置"
+        android:onClick="clickCancel"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:textColor="#F8F8FF"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:text="地图"
+        android:textSize="20sp"
+        android:textColor="#8B4513"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/get_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:onClick="clickSave"
+        android:clickable="true"
+        android:text="获取舍友位置"
+        android:textSize="18sp"
+        android:textColor="#F8F8FF"
+        android:typeface="monospace"/>
+</RelativeLayout>
